@@ -13,12 +13,15 @@
 
 `GuwenBERT`is a `RoBERTa` model trained on Classical Chinese text.
 
-In natural language processing, pre-trained language models have become a very important basic technology. At present, there are a large number of modern Chinese BERT models available for download on the Internet, but the language model of Classical Chinese is lacking. In order to promote the research of ancient Chinese and natural language processing, we released the Classical Chinese pre-trained language model called `GuwenBERT` based on Continue Training, which combines modern Chinese RoBERTa weights and a large number of Classical Chinese corpus to transform some of the language features of modern Chinese into Classical Chinese to improve performance.
+In natural language processing, pre-trained language models have become a very important basic technology. At present, there are a large number of modern Chinese BERT models available for download on the Internet, but the language model of Classical Chinese is lacking. In order to promote the research of Classical Chinese and natural language processing, we released the Classical Chinese pre-trained language model called `GuwenBERT`.
 
-* `GuwenBERT` is based on the corpus `Daizhige Ancient Documents`, which contains 15,694 ancient Chinese books with 1.70 characters. All traditional characters are converted into simplified characters.
+For common tasks in Classical Chinese: sentence segmentation, punctuation, and named entity recognition, the sequence labeling model is usually used. This type of model relies on pre-trained word vectors or BERT, so a good language model can greatly improve performance. In the NER task, our BERT is **increased by 6.3%** than the most popular Chinese RoBERTa. It performs as same F1 score as Chinese RoBERTa in only 300 steps, which is especially suitable for **small datasets with insufficient annotation corpus**. Our model can also reduce processes such as **data cleaning, data enhancement, introducing a dictionary**. In the evaluation, we only used a BERT+CRF model to reach second place.
+
+* `GuwenBERT` is based on the corpus `Daizhige Classical Chinese Documents`, which contains 15,694 Classical Chinese books with 1.70 characters. All traditional characters are converted into simplified characters.
 
 * `GuwenBERT`'s vocabulary is based on Classical Chinese corpus taking high-frequency characters. The vocab size is 23,292.
 
+* Based on Continue Training, `GuwenBERT` combines modern Chinese RoBERTa weights and a large amount of Classical Chinese corpus to transfer some of the language features of modern Chinese to Classical Chinese to improve performance.
 
 ## Online Demo
 
