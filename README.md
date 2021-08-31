@@ -25,16 +25,35 @@
 
 * 基于继续训练技术（Continue Training），`GuwenBERT`结合现代汉语RoBERTa权重和大量古文语料，将现代汉语的部分语言特征向古代汉语迁移以提升表现。
 
+## 相关项目
+
+* [CCLUE](https://cclue.top): 古文语言理解测评基准
+* [GuwenModels](https://github.com/Ethan-yt/guwen-models): 古文自然语言处理模型合集, 收录互联网上的古文相关模型及资源.
+
+
 ## 在线体验
 
+### 古文预训练语言模型
 
 <p align="center">
-<a href="https://huggingface.co/ethanyt/guwenbert-base"><img alt="在线体验" src="./assets/demo.png" width="600"></a>
+<a href="https://huggingface.co/ethanyt/guwenbert-base">
+    <img width="601" alt="image" src="https://user-images.githubusercontent.com/9592150/131475589-7b007f0f-3391-4f98-924e-d6dee4178c75.png"></a>
 </p>
 
 点击图片或[这里](https://huggingface.co/ethanyt/guwenbert-base)跳转。第一次计算可能需要加载模型，请多等一会。
 
+### 古文自然语言处理流水线
+
+<p align="center">
+<a href="https://cclue.top/guwen-models.html"><img width="888" alt="image" src="https://user-images.githubusercontent.com/9592150/131475298-793b9693-bcba-4a2c-8ad2-8036d6171957.png"></a>
+</p>
+
+点击图片或[这里](https://cclue.top/guwen-models.html)跳转。
+
+
 ## 新闻
+2021/7/25 和下游任务相关的模型、代码已经上传，欢迎star：https://github.com/Ethan-yt/guwen-models
+
 2020/10/31 CCL2020会议分享：基于继续训练的古汉语语言模型 [slides](./assets/基于继续训练的古汉语语言模型.pdf)
 
 2020/10/25 我们的模型已接入[Huggingface Transformers](https://github.com/huggingface/transformers)，查看[使用说明](#使用说明)
